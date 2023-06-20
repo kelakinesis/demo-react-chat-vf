@@ -24,8 +24,10 @@ import { TalkToAgentTrace } from './traces/talk-to-agent.trace';
 import { VideoTrace } from './traces/video.trace';
 import { useLiveAgent } from './use-live-agent.hook';
 
-const IMAGE = 'https://picsum.photos/seed/1/200/300';
-const AVATAR = 'https://picsum.photos/seed/1/80/80';
+const IMAGE = 'https://www.three.co.uk/content/experience-fragments/threedigital/uk/en/site/header/master/_jcr_content/root/header/top/logo.coreimg.svg/1668177162294/three-logo.svg';
+const AVATAR = 'https://www.three.co.uk/content/experience-fragments/threedigital/uk/en/site/header/master/_jcr_content/root/header/top/logo.coreimg.svg/1668177162294/three-logo.svg';
+const ASSISTANT_NAME = 'Three VA Demo';
+const ASSISTANT_DESCRIPTION = 'All the help you need for using your phone and Three account.';
 
 export const Demo: React.FC = () => {
   const [open, setOpen] = useState(false);
@@ -86,8 +88,8 @@ export const Demo: React.FC = () => {
       <ChatWindow.Container>
         <RuntimeAPIProvider {...runtime}>
           <Chat
-            title="My Assistant"
-            description="welcome to my assistant"
+            title={ASSISTANT_NAME}
+            description={ASSISTANT_DESCRIPTION}
             image={IMAGE}
             avatar={AVATAR}
             withWatermark
