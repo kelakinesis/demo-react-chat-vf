@@ -1,0 +1,21 @@
+#root {
+    /* Launcher and header background color */
+    --colors-primary: #000000;
+
+    /* Launcher background color upon hover */
+    --colors-darkPrimary: darkgrey;
+
+    /* Button border color */
+    --colors-fadedPrimary: lightgrey;
+    
+    /* Widget background color and user message font color */
+    --colors-white: rgb(251, 251, 251);
+    
+    /* System message, chat input field, and assistant name font color */
+    --colors-black: #000000;
+
+    /* System message background color */
+    --colors-lightGrey: rgb(163, 163, 163);
+    
+    --fonts-default: 'Helvetica Neue', 'Helvetica', 'Arial';
+}

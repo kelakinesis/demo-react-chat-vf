@@ -27,6 +27,26 @@ import { useLiveAgent } from './use-live-agent.hook';
 const IMAGE = 'https://picsum.photos/seed/1/200/300';
 const AVATAR = 'https://picsum.photos/seed/1/80/80';
 
+// const CustomCard: React.FC<{ payload: any }> = ({ payload: { colour, category, sku, image_url } }) => (
+//   <div
+//     style={{
+//       background: '#FFFFFF',
+//       fontFamily: 'Helvetica Neue, Helvetica, Arial',
+//       padding: '8px',
+//       alignItems: 'center',
+//       textAlign: 'center',
+//       overflow: 'hidden',
+//       boxShadow: '2px 2px 5px 0px rgba(0, 64, 128, 0.1)',
+//       borderRadius: '5px',
+//       fontWeight: 'bold',
+//       textTransform: 'capitalize',
+//     }}
+//   >
+//     <img alt={sku} style={{ width: 200 }} src={String(image_url)} />
+//     <p>{colour} {category}</p>
+//   </div>
+// );
+
 export const Demo: React.FC = () => {
   const [open, setOpen] = useState(false);
 
