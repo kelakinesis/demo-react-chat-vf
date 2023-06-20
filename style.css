@@ -41,3 +41,7 @@ header {
 
     --fonts-default: var(--demo-font-family);
 }
+
+#chat-window {
+    box-shadow: '2px 3px 10px 3px rgba(0,0,0,0.21)',
+}
