@@ -66,7 +66,7 @@ export const Demo: React.FC = () => {
           bottom: '2rem',
         }}
       >
-        <Launcher onClick={handleLaunch}  />
+        <Launcher onClick={handleLaunch} />
       </span>
     );
   }
@@ -74,17 +74,6 @@ export const Demo: React.FC = () => {
   return (
     <div
       id='chat-window'
-      style={{
-        position: 'absolute',
-        right: '1rem',
-        top: '3rem',
-        bottom: '3rem',
-        width: '400px',
-        border: '1px solid #ddd',
-        borderRadius: '8px',
-        overflowX: 'hidden',
-        overflowY: 'scroll',
-      }}
     >
       <ChatWindow.Container>
         <RuntimeAPIProvider {...runtime}>
