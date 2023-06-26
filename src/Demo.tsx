@@ -25,7 +25,7 @@ import { VideoTrace } from './traces/video.trace';
 import { useLiveAgent } from './use-live-agent.hook';
 
 const IMAGE = 'https://www.three.co.uk/content/experience-fragments/threedigital/uk/en/site/header/master/_jcr_content/root/header/top/logo.coreimg.svg/1668177162294/three-logo.svg';
-const AVATAR = 'https://www.three.co.uk/content/experience-fragments/threedigital/uk/en/site/header/master/_jcr_content/root/header/top/logo.coreimg.svg/1668177162294/three-logo.svg';
+const AVATAR = IMAGE;
 const ASSISTANT_NAME = 'Demo';
 const ASSISTANT_DESCRIPTION = 'An assistant to demo Custom Actions';
 
@@ -72,9 +72,7 @@ export const Demo: React.FC = () => {
   }
 
   return (
-    <div
-      id='chat-window'
-    >
+    <div id='chat-window'>
       <ChatWindow.Container>
         <RuntimeAPIProvider {...runtime}>
           <Chat

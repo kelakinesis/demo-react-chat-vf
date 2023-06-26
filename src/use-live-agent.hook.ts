@@ -27,12 +27,12 @@ export const useLiveAgent = (runtime: ReturnType<typeof useRuntime>) => {
       timestamp: Date.now(),
       message,
     });
-    scheduleSystemReply('I am a real person. I understand you and empathize with your plight.');
+    scheduleSystemReply('Ok, please give me a moment.');
   };
 
   const talkToAgent = () => {
     setEnabled(true);
-    scheduleSystemReply('I am a real person. How can I help you?');
+    scheduleSystemReply('I am a real person. Can you please share a little more detail?');
   };
 
   const talkToRobot = () => {
