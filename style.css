@@ -1,0 +1,99 @@
+:root {
+    --demo-highlight-color: rgb(193, 255, 20);
+    --demo-secondary-color: rgb(0, 56, 255);
+    --demo-font-family: "Helvetica", "Open Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--demo-font-family);
+    background-color: #fff;
+}
+
+#root {
+    /* System message, chat input field, and assistant name font color */
+    --colors-black: #000000;
+    --fonts-default: var(--demo-font-family);
+}
+
+.vfrc-launcher {
+    background-color: var(--demo-secondary-color) !important;
+}
+.vfrc-launcher:hover {
+    background-color: var(--demo-highlight-color) !important;
+}
+
+#chat-window {
+    position: absolute;
+    right: 1rem;
+    top: 3rem;
+    bottom: 3rem;
+}
+
+.vfrc-chat {
+    width: 420px;
+    border-radius: 8px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    box-shadow: 2px 3px 10px 3px rgba(0, 0, 0, 0.21);
+}
+
+/* Chat window header */
+header {
+    /* visibility: hidden;
+    height: 0px !important; */
+    background-color: var(--demo-highlight-color) !important;
+
+    .vfrc-header--title {
+        color: #000;
+    }
+    .vfrc-icon {
+        color: #000 !important;
+    }
+}
+
+.vfrc-assistant-info {
+    /* visibility: hidden; */
+    /* height: 0px; */
+}
+
+.vfrc-footer {
+    background-color: #fff;
+    .vfrc-bubble {
+        background-color: var(--demo-secondary-color);
+    }
+}
+
+.vfrc-footer--watermark {
+    /* visibility: hidden;
+    height: 0px; */
+}
+
+.vfrc-message {
+    box-shadow: 2px 2px 5px -4px rgba(0,0,0,0.5);
+}
+
+.vfrc-system-response--message {
+    .vfrc-message {
+        background-color: rgb(242, 242, 242) !important;
+        border-radius: 4px !important;
+    }
+}
+
+.vfrc-user-response {
+    .vfrc-message {
+        background-color: #000 !important;
+        border-radius: 4px !important;
+        color: #fff !important;
+    }
+}
+
+.vfrc-button {
+    color: #091747 !important;
+    border-color: #091747 !important;
+    border-radius: 4px !important;
+}

@@ -24,8 +24,8 @@ import { TalkToAgentTrace } from './traces/talk-to-agent.trace';
 import { VideoTrace } from './traces/video.trace';
 import { useLiveAgent } from './use-live-agent.hook';
 
-const IMAGE = 'https://picsum.photos/seed/1/200/300';
-const AVATAR = 'https://picsum.photos/seed/1/80/80';
+const IMAGE = 'https://consensys.io/favicon.svg';
+const AVATAR = IMAGE;
 
 export const Demo: React.FC = () => {
   const [open, setOpen] = useState(false);
@@ -71,23 +71,13 @@ export const Demo: React.FC = () => {
 
   return (
     <div
-      style={{
-        position: 'absolute',
-        right: '1rem',
-        top: '3rem',
-        bottom: '3rem',
-        width: '400px',
-        border: '1px solid #ddd',
-        borderRadius: '8px',
-        overflowX: 'hidden',
-        overflowY: 'scroll',
-      }}
+      id="chat-window"
     >
       <ChatWindow.Container>
         <RuntimeAPIProvider {...runtime}>
           <Chat
-            title="My Assistant"
-            description="welcome to my assistant"
+            title="Demo Assistant"
+            description="For Custom Actions and Chat UI Kit"
             image={IMAGE}
             avatar={AVATAR}
             withWatermark
