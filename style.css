@@ -1,0 +1,55 @@
+:root {
+    --demo-highlight-color: #06f;
+    --demo-secondary-color: rgb(218, 218, 218);
+    --demo-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--demo-font-family);
+    background-color: var(--demo-secondary-color);
+}
+
+header {
+    background-color: var(--demo-highlight-color);
+    padding: 10px;
+}
+
+#root {
+    /* Launcher and header background color */
+    --colors-primary: rgb(230, 0, 0);
+
+    /* Launcher background color upon hover */
+    --colors-darkPrimary: var(--demo-highlight-color);
+
+    /* Button border color */
+    --colors-fadedPrimary: var(--demo-highlight-color);
+
+    /* Widget background color and user message font color */
+    --colors-white: rgb(242, 242, 242);
+
+    /* System message, chat input field, and assistant name font color */
+    --colors-black: #000000;
+
+    /* System message and avatar background color */
+    --colors-lightGrey: var(--demo-secondary-color);
+
+    --fonts-default: var(--demo-font-family);
+}
+
+#chat-window {
+    position: absolute;
+    right: 1rem;
+    top: 3rem;
+    bottom: 3rem;
+    width: 400px;
+    /* border: 1px solid #000000; */
+    border-radius: 8px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    box-shadow: 2px 3px 10px 3px rgba(0,0,0,0.21);
+}
