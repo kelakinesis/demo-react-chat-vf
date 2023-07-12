@@ -11,13 +11,13 @@ export const DemoContainer = styled.div({
   overflowX: 'hidden',
   overflowY: 'scroll',
 
-  '@media (max-width: 768px)': {
-    position: 'fixed',
-    top: 0,
-    bottom: 0,
-    left: 0,
-    right: 0,
-    border: 0,
-    borderRadius: 0,
-  },
+  // '@media (max-width: 768px)': {
+  //   position: 'fixed',
+  //   top: 0,
+  //   bottom: 0,
+  //   left: 0,
+  //   right: 0,
+  //   border: 0,
+  //   borderRadius: 0,
+  // },
 });
