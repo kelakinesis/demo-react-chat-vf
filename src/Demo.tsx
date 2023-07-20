@@ -33,6 +33,8 @@ export const Demo: React.FC = () => {
 
   const runtime = useRuntime({
     verify: { authorization: import.meta.env.VF_DM_API_KEY },
+    // verify: { projectID: '6490ba5fb09c3b00079cec5c' },
+    versionID: 'production',
     session: { userID: `anonymous-${Math.random()}` },
     traces: [AccountInfoTrace, CalendarTrace, VideoTrace, TalkToAgentTrace(() => liveAgent.talkToAgent())],
   });
@@ -75,8 +77,8 @@ export const Demo: React.FC = () => {
       <ChatWindow.Container>
         <RuntimeAPIProvider {...runtime}>
           <Chat
-            title="My Assistant"
-            description="welcome to my assistant"
+            title="Demo Assistant"
+            description="For Custom Actions"
             image={IMAGE}
             avatar={AVATAR}
             withWatermark
