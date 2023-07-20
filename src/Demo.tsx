@@ -25,8 +25,8 @@ import { TalkToAgentTrace } from './traces/talk-to-agent.trace';
 import { VideoTrace } from './traces/video.trace';
 import { useLiveAgent } from './use-live-agent.hook';
 
-const IMAGE = 'https://picsum.photos/seed/1/200/300';
-const AVATAR = 'https://picsum.photos/seed/1/80/80';
+const IMAGE = 'https://yt3.googleusercontent.com/ytc/AOPolaRR42TSDkkZe3fIXYxyt1h0ThXuhnP2tq6JGwfWAQ=s176-c-k-c0x00ffffff-no-rj';
+const AVATAR = IMAGE;
 
 export const Demo: React.FC = () => {
   const [open, setOpen] = useState(false);
