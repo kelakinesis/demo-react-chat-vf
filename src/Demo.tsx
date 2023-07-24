@@ -25,8 +25,8 @@ import { TalkToAgentTrace } from './traces/talk-to-agent.trace';
 import { VideoTrace } from './traces/video.trace';
 import { useLiveAgent } from './use-live-agent.hook';
 
-const IMAGE = 'https://picsum.photos/seed/1/200/300';
-const AVATAR = 'https://picsum.photos/seed/1/80/80';
+const IMAGE = 'https://s.latamairlines.com/images/seo/favicon.ico';
+const AVATAR = IMAGE;
 
 export const Demo: React.FC = () => {
   const [open, setOpen] = useState(false);
@@ -75,8 +75,8 @@ export const Demo: React.FC = () => {
       <ChatWindow.Container>
         <RuntimeAPIProvider {...runtime}>
           <Chat
-            title="My Assistant"
-            description="welcome to my assistant"
+            title="Demo Assistant"
+            description="For Custom Actions"
             image={IMAGE}
             avatar={AVATAR}
             withWatermark

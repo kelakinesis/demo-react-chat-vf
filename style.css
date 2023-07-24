@@ -1,0 +1,100 @@
+:root {
+    --demo-highlight-color: rgb(232, 17, 75);
+    --demo-secondary-color: rgb(16, 0, 79);
+    --demo-font-family: "Helvetica Neue", "Roboto", "Segoe UI", "Arial", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--demo-font-family);
+    background-color: #fff;
+}
+
+#root {
+    /* System message, chat input field, and assistant name font color */
+    --colors-black: #000000;
+    --fonts-default: var(--demo-font-family);
+}
+
+.vfrc-launcher {
+    background-color: var(--demo-highlight-color) !important;
+}
+.vfrc-launcher:hover {
+    background-color: var(--demo-secondary-color) !important;
+}
+
+#chat-window {
+    position: absolute;
+    right: 1rem;
+    top: 3rem;
+    bottom: 3rem;
+    border: none !important;
+}
+
+.vfrc-chat {
+    width: 400px;
+    border-radius: 8px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    box-shadow: 2px 3px 10px 3px rgba(0, 0, 0, 0.21);
+}
+
+/* Chat window header */
+header {
+    /* visibility: hidden;
+    height: 0px !important; */
+    background-color: var(--demo-secondary-color) !important;
+}
+
+header .vfrc-header--title {
+    color: #fff;
+}
+/* header .vfrc-icon {
+    color: #000 !important;
+} */
+
+.vfrc-assistant-info {
+    /* visibility: hidden; */
+    /* height: 0px; */
+}
+
+.vfrc-footer {
+    background-color: #fff;
+}
+.vfrc-footer .vfrc-bubble {
+    background-color: var(--demo-secondary-color);
+}
+
+.vfrc-footer--watermark {
+    /* visibility: hidden;
+    height: 0px; */
+}
+
+.vfrc-message {
+    box-shadow: 2px 2px 5px -4px rgba(0,0,0,0.5);
+}
+
+.vfrc-system-response--message .vfrc-message {
+    background-color: rgb(242, 242, 242) !important;
+    border-radius: 8px !important;
+}
+
+.vfrc-user-response .vfrc-message {
+    background-color: #000 !important;
+    border-radius: 8px !important;
+    color: #fff !important;
+}
+
+.vfrc-button {
+    color: #000 !important;
+    border-color: #000 !important;
+    border-radius: 8px !important;
+}
+
+.vfrc-bubble {
+    background-color: var(--demo-highlight-color) !important;
+}
