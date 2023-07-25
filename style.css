@@ -1,0 +1,146 @@
+/* use this file to override default styles when forking this repository */
+:root {
+    --color-primary: rgb(35, 164, 149);
+    --color-secondary: rgb(208, 235, 232);
+}
+
+/*
+  PAGE CONTENTS
+
+  Customize the page that the chat launcher lives on
+*/
+
+/* .voiceflow-chat {} */
+
+.vfrc-launcher {
+    background-color: var(--color-primary) !important;
+}
+
+.vfrc-launcher:hover {
+    background-color: #000 !important;
+}
+
+/* .vfrc-chat--overlay {} */
+
+/* .vfrc-prompt {} */
+
+
+/*
+    CHAT WIDGET HEADER
+  
+    Customize the content, controls and styling included in your chat widget header, including the Assistant Information.
+    Note that changes to the assistant information here will be shared across other elements that consume this styling.
+  */
+
+.vfrc-header {
+    background-color: var(--color-primary) !important;
+}
+
+/* .vfrc-assistant-info {} */
+
+/* .vfrc-assistant-info--title {} */
+
+/* .vfrc-assistant-info--description {} */
+
+/* .vfrc-avatar {} */
+
+/* .vfrc-icon {} */
+
+
+/*
+    CHAT MESSAGE BODY
+  
+    Customize the layout and display of the chat body, and the conversation's metadata
+  */
+
+.vfrc-chat {
+    background-color: rgb(255, 253, 250);
+}
+
+.vfrc-chat--dialog {
+    background-color: #fff;
+}
+
+/* .vfrc-chat--spacer {} */
+
+/* .vfrc-chat--session-time {} */
+
+/* .vfrc-chat--status {} */
+
+/* .vfrc-message {} */
+
+/* .vfrc-timestamp {} */
+
+
+/*
+    ASSISTANT RESPONSES
+  
+    Customize the style and layout of assistant response messages.
+  */
+
+/* .vfrc-system-response--indicator {} */
+
+/* .vfrc-system-response {} */
+
+/* .vfrc-system-response--controls {} */
+
+/* .vfrc-system-response--list {} */
+
+/* .vfrc-system-response--actions {} */
+
+/* .vfrc-button {} */
+
+/* .vfrc-image {} */
+
+/* .vfrc-image--background {} */
+
+/* .vfrc-card--content {} */
+
+/* .vfrc-card--header {} */
+
+/* .vfrc-card--description {} */
+
+/* .vfrc-carousel {} */
+
+/* .vfrc-carousel--button {} */
+
+/* Targeted styling for just the Assistant messages. */
+.vfrc-system-response .vfrc-message {
+    background-color: var(--color-secondary);
+}
+
+/* Targeted styling for just the Assistant buttons. */
+/* .vfrc-system-response .vfrc-button {} */
+
+
+/*
+    USER RESPONSES
+  
+    Customize the style and layout of users response messages.
+  */
+
+/* .vfrc-user-response {} */
+
+/* Targeted styling for just the User messages */
+.vfrc-user-response .vfrc-message {
+    background-color: rgb(23, 52, 46);
+}
+
+
+/*
+    FOOTER
+  
+    Customize the layout and appearance of the message input field and the VF Branding
+  */
+
+/* .vf-footer {} */
+
+/* .vfrc-input {} */
+
+/* .vfrc-chat-input--button {} */
+
+.vfrc-bubble {
+    background-color: var(--color-primary) !important;
+}
+
+/* .vfrc-footer--watermark {} */

@@ -75,8 +75,8 @@ export const Demo: React.FC = () => {
       <ChatWindow.Container>
         <RuntimeAPIProvider {...runtime}>
           <Chat
-            title="My Assistant"
-            description="welcome to my assistant"
+            title="Demo Assistant"
+            description="For Custom Actions"
             image={IMAGE}
             avatar={AVATAR}
             withWatermark
