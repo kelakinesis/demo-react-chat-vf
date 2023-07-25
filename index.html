@@ -4,10 +4,31 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>react-chat demo</title>
+  <title>Custom Actions Demo</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div id="description">
+    <h2>Voiceflow Custom Actions Demo</h2>
+    <p>Sample Custom Actions and utterances to trigger their flows include:</p>
+    <section>
+      <h3>calendar</h3>
+      <p class="utterance">Sample utterance: Can I book an appointment?</p>
+      <p>Display a calendar component that is imported into the demo React project.</p>
+    </section>
+    <section>
+      <h3>video</h3>
+      <p class="utterance">Sample utterance: What services do you offer?</p>
+      <p>Displays a custom video component.</p>
+    </section>
+    <section>
+      <h3>talk_to_agent</h3>
+      <p class="utterance">Sample utterance: Talk to an agent</p>
+      <p>Switches the conversation into a mode that emulates chatting with a live agent.</p>
+      <p>New messages will skip the Voiceflow logic and be sent directly to the agent.</p>
+      <p>You can also end the live chat and return to talking with the Voiceflow bot. (The banner is a custom component.)</p>
+    </section>
+  </div>
   <div id="root"></div>
   <script type="module" src="./src/main.tsx"></script>
 </body>

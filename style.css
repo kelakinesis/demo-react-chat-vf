@@ -1,7 +1,9 @@
 /* use this file to override default styles when forking this repository */
 :root {
     --color-primary: rgb(35, 164, 149);
+    --color-primary-dark: rgb(23, 52, 46);
     --color-secondary: rgb(208, 235, 232);
+    --font-primary: "Helvetica Neue", "Roboto", "Segoe UI", "Arial", sans-serif;
 }
 
 /*
@@ -9,6 +11,26 @@
 
   Customize the page that the chat launcher lives on
 */
+
+body {
+    font-family: var(--font-primary);
+    color: var(--color-primary-dark);
+}
+
+#description {
+    width: 35dvw;
+}
+
+section {
+    margin: 30px 0;
+    padding: 10px 30px;
+    background-color: rgb(252, 249, 245);
+    border-radius: 8px;
+}
+
+.utterance {
+    font-style: italic;
+}
 
 /* .voiceflow-chat {} */
 
@@ -123,7 +145,7 @@
 
 /* Targeted styling for just the User messages */
 .vfrc-user-response .vfrc-message {
-    background-color: rgb(23, 52, 46);
+    background-color: var(--color-primary-dark);
 }
 
 
