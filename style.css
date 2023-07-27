@@ -19,6 +19,7 @@ body {
 
 #description {
     width: 35dvw;
+    /* visibility: hidden;  */
 }
 
 section {
