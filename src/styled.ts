@@ -19,5 +19,6 @@ export const DemoContainer = styled.div({
     right: 0,
     border: 0,
     borderRadius: 0,
+    width: '100%',
   },
 });

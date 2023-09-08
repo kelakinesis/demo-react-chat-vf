@@ -1,0 +1,87 @@
+:root {
+    --demo-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --demo-color-primary: rgb(14, 21, 98);
+    --demo-color-secondary: rgb(229, 252, 240);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--demo-font-family);
+}
+
+#root {
+    --fonts-default: var(--demo-font-family);
+}
+
+/* Chat launch button */
+.vfrc-launcher {
+    background-color: var(--demo-color-primary) !important;
+}
+.vfrc-launcher:hover {
+    background-color: var(--demo-color-secondary) !important;
+}
+
+/* Chat window header */
+header {
+    /* visibility: hidden;
+    height: 0px !important; */
+    background-color: var(--demo-color-primary) !important;
+
+    .vfrc-header--title {
+        color: #fff;
+    }
+    .vfrc-icon {
+        color: #fff;
+    }
+}
+
+.vfrc-assistant-info {
+    /* visibility: hidden; */
+    /* height: 0px; */
+}
+
+.vfrc-footer {
+    background-color: #fff;
+
+    /* Send message button */
+    .vfrc-bubble {
+        background-color: var(--demo-color-primary);
+    }
+}
+
+.vfrc-footer--watermark {
+    /* visibility: hidden;
+    height: 0px; */
+}
+
+.vfrc-message {
+    box-shadow: 2px 2px 5px -4px rgba(0,0,0,0.5);
+    border-radius: 4px;
+}
+
+.vfrc-system-response--message {
+    .vfrc-message {
+        background-color: var(--demo-color-secondary);
+    }
+}
+
+.vfrc-user-response {
+    .vfrc-message {
+        background-color:  var(--demo-color-primary);
+        color: #fff;
+    }
+}
+
+.vfrc-button {
+    color:  var(--demo-color-primary) !important;
+    border-color:  var(--demo-color-primary) !important;
+    border-radius: 4px !important;
+}
+
+.vfrc-button:hover {
+    border-color:  var(--demo-color-secondary) !important;
+}
